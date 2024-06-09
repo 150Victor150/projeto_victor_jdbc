@@ -7,21 +7,19 @@ import com.castelo.dao.PessoaPojo;
 import com.castelo.modelo.Funcionario;
 import com.castelo.modelo.Pessoa;
 
-/**
- * Hello world!
- *
- */
+ 
 public class App 
 {
     
     public static void main( String[] args )
     {
-        /*  Inserindo pessoas no banco de dados.
+        /*  Inserindo pessoas no banco de dados.*/
+        /*
         Pessoa pessoa = new Pessoa();
 
-        pessoa.setNome("pedro");
-        pessoa.setEndereco("rua abc");
-        pessoa.setIdade(18);
+        pessoa.setNome("Wilian");
+        pessoa.setEndereco("Rua Gordos da Patria");
+        pessoa.setIdade(20);
 
 
         PessoaPojo pessoaPojo = new PessoaPojo();
@@ -33,16 +31,17 @@ public class App
         PessoaDao pessoaDao = new PessoaDao();
         pessoaDao.cadastrarPessoa(pessoaPojo);
 
-
         */
+        
 
+        /*Atualizando o cadastro pessoa */
         /*
         Pessoa pessoa = new Pessoa();
 
-        pessoa.setNome("Norberto");
-        pessoa.setEndereco("Rua Karai Java");
-        pessoa.setIdade(68);
-        pessoa.setId(2);
+        pessoa.setNome("Wilian");
+        pessoa.setEndereco("Rua Gordos da Patria");
+        pessoa.setIdade(35);
+        pessoa.setId(3);
         
 
 
@@ -57,13 +56,15 @@ public class App
         pessoaDao.atualizarPessoa(pessoaPojo);
         */
 
+
+        /*deletar pessoa*/
         /*
         Pessoa pessoa = new Pessoa();
 
-        pessoa.setNome("Norberto");
-        pessoa.setEndereco("Rua Karai Java");
-        pessoa.setIdade(68);
-        pessoa.setId(2);
+        pessoa.setNome("wilian");
+        pessoa.setEndereco("Rua Gordos da Patria");
+        pessoa.setIdade(35);
+        pessoa.setId(3);
         
 
 
@@ -76,24 +77,67 @@ public class App
 
         PessoaDao pessoaDao = new PessoaDao();
         pessoaDao.deletarPessoa(pessoaPojo);
-
         */
+        
 
-        Pessoa funcionario = new Funcionario();
+        /*cadastrar funcionario*/
+        /*
+        Funcionario funcionario = new Funcionario();
 
-        funcionario.setNome("pedro");
-        funcionario.setLogin("rua abc");
-        funcionario.setSenha("1234");
+        funcionario.setNome("Santi");
+        funcionario.setLogin("Santi");
+        funcionario.setSenha("1553");
 
 
         FuncionarioPojo funcionarioPojo = new FuncionarioPojo();
-        FuncionarioPojo.setNome(funcionario.getNome());
-        FuncionarioPojo.setLogin(funcionario.getLogin());
+        funcionarioPojo.setNome(funcionario.getNome());
+        funcionarioPojo.setLogin(funcionario.getLogin());
         funcionarioPojo.setSenha(funcionario.getSenha());
 
 
         FuncionarioDao funcionarioDao = new FuncionarioDao();
-        FuncionarioDao.cadastrarFuncionario(funcionarioPojo);
+        funcionarioDao.cadastrarFuncionario(funcionarioPojo);
+        */
+
+
+        /*atualizar funcionario */
+        /*
+        Funcionario funcionario = new Funcionario();
+
+        funcionario.setNome("Santi");
+        funcionario.setLogin("SantiCVL");
+        funcionario.setSenha("1553");
+        funcionario.setId(2);
+
+
+        FuncionarioPojo funcionarioPojo = new FuncionarioPojo();
+        funcionarioPojo.setNome(funcionario.getNome());
+        funcionarioPojo.setLogin(funcionario.getLogin());
+        funcionarioPojo.setSenha(funcionario.getSenha());
+        funcionarioPojo.setId(funcionario.getId());
+
+
+        FuncionarioDao funcionarioDao = new FuncionarioDao();
+        funcionarioDao.atualizarFuncionario(funcionarioPojo);
+        */
+
+
+        /*deletar funcionario */
+        /*
+        Funcionario funcionario = new Funcionario();
+
+        funcionario.setId(3);
+
+
+        FuncionarioPojo funcionarioPojo = new FuncionarioPojo();
+        funcionarioPojo.setId(funcionario.getId());
+
+        FuncionarioDao funcionarioDao = new FuncionarioDao();
+        funcionarioDao.deletarFuncionario(funcionarioPojo);
+        */
+
+
+         
 
     }
 }

@@ -94,4 +94,39 @@ public class FuncionarioDao {
            
         
     }
+/*
+
+    public void lerFuncionario(FuncionarioPojo FuncionarioPojo) {
+
+        Conexao conexao = new Conexao();
+
+        String sql = "SELECT * FROM funcionario";
+
+        PreparedStatement ps = null;
+
+
+        try {
+
+            ps = conexao.getConexao().prepareStatement(sql);
+
+            ps.setInt(1, FuncionarioPojo.getId());
+            
+           
+
+            ps.execute();
+            ps.close();
+
+            System.out.println("Dados LIDOS com sucesso!");
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+           
+        
+    }
+
+
+*/
+
 }
